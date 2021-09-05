@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Atmiya University Result</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="#">AU Result</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" rel="noopener noreferrer" href="https://github.com/coldter/AtmiyaUniversityResult-API">Github <i class="ion ion-social-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page hire-me-page"></main>
+		<div role="alert" class="alert alert-info" style="margin: 20px; margin-bottom: 0px;"><span><strong><i class="ion ion-alert-circled"></i></strong> This is not the official website of Atmiya University. It's my humble effort to make things quick for you.</span></div>
+        <section class="portfolio-block hire-me">
+            <div class="container">
+                <div class="heading">
+                    <img src="assets/img/aulogo.png" id="aulogo" alt="atmiya logo">
+                    <h2>Result</h2>
+                </div>
+                <div class="portfolio-block2 ">                    
+									<div class="mb-3"><label class="form-label" for="name">Name</label><input class="form-control" type="text" id="name" placeholder="surname name (as per your id-card)" required></div>
+								  <div class="mb-3"><label class="form-label" for="enrollmentNo">Enrollment</label><input class="form-control" type="number" id="enrollmentNo" required></div>
+                    <div class="mb-3">
+											<span role="alert" class="alert2 alert-danger" id="span"></span>
+                        <div class="row">
+                            <div class="button"><button id="submit" class="btn btn-primary d-block w-100">submit</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section class="portfolio-block">
+            <div class="container" id="imgBlock" style="display: none;">
+                <div class="avatar"></div>
+                <div class="about-me">
+                    <p>Hi!👋🏻 <strong id="hiName"></strong>. </p>
+                </div>
+            </div>
+        </section>
+				<section class="portfolio-block result-table">
+						<div class="portfolio-info-card" id="table">
+							<div class="table-responsive">
+                                <div id="loading"></div>
+								<table class="table">
+										<thead>
+												<tr>
+														<th>Examination</th>
+														<th>Year</th>
+														<th>Download</th>
+												</tr>
+										</thead>
+										<tbody id="tbody">
+												
+										</tbody>
+								</table>
+							</div>
+						</div>
+				</section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="https://atmiyauni.ac.in/" rel="noopener noreferrer" target="_blank">Atmiya Institut</a></div>
+						<div class="links"><a href="https://cms.atmiya.edu.in/" rel="noopener noreferrer" target="_blank">Official CMS</a></div>
+            <div class="social-icons"><a href="https://github.com/coldter" rel="noopener noreferrer" target="_blank"><i class="icon ion-social-github" style="font-size: 2em;"></i></a></div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z12BJ3NE3K"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z12BJ3NE3K');
+    </script>
+</body>
+
+</html>
