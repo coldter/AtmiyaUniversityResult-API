@@ -23,7 +23,7 @@
      -moz-appearance: textfield;
  }
 
- #loading {
+ #loading1, #loading0 {
     display: none;
     width: 2rem;
     height: 2rem;
