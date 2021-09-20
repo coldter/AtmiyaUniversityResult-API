@@ -30,7 +30,7 @@ function clearDisplay() {
 function displayLoading1() {
 	loader1.style.display = 'block';
 	setTimeout(() => {
-		loader.style.display = 'none';
+		loader1.style.display = 'none';
 	}, 15000);
 }
 
@@ -41,7 +41,7 @@ function hideLoading1() {
 function displayLoading0() {
 	loader0.style.display = 'block';
 	setTimeout(() => {
-		loader.style.display = 'none';
+		loader0.style.display = 'none';
 	}, 15000);
 }
 
