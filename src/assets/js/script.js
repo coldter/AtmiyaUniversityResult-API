@@ -1,4 +1,3 @@
-const nameBox = document.querySelector('#name');
 const enrollBox = document.querySelector('#enrollmentNo');
 const submitButton = document.querySelector('#submit');
 const spanAlert = document.querySelector('#span');
@@ -18,7 +17,6 @@ let DETAILS;
 //functions
 function clearInBox() {
 	enrollBox.value = '';
-	nameBox.value = '';
 }
 
 function clearDisplay() {
@@ -117,16 +115,6 @@ function isObjEmpty(obj) {
 	return Object.keys(obj).length === 0;
 }
 
-function checkName(name) { 
-	let nameIn = nameBox.value.toLowerCase().split(" ");
-	name = name.toLowerCase().split(" ");
-
-	if (name[0] === nameIn[0] && name[1] === nameIn[1])
-		return true;
-	else
-		return false;
-}
-
 function sAlert (alert) {
 	spanAlert.style.display = 'block';
 	spanAlert.innerHTML = alert;
@@ -165,24 +153,19 @@ function tirmName(nm) {
 submitButton.addEventListener('click', () => {
 	clearDisplay();
 	
-	if(nameBox.value.length !== 0 && enrollBox.value.length !== 0) {
+	if(enrollBox.value.length !== 0) {
 		
 		getStudentDetails()
 
 			.then(details => {
 			if(!isObjEmpty(details)) {
-				if(checkName(details[0].name) === true) {
 					DETAILS = details;
 					
 					putPhoto(details[0].Student_Photo, tirmName(details[0].name));
 					putTable(details);
 				}
-				else {
-					sAlert('Invalid entry please check the entered enrollment and name');
-				}
-			}
-			else {
-				sAlert('Invalid entry please check the entered enrollment and name');
+        else {
+				sAlert('Invalid entry please check the entered enrollment');
 			}
 		})
 		
@@ -198,7 +181,7 @@ submitButton.addEventListener('click', () => {
 		);
 	}
 	else {
-		sAlert('Name and Enrollment can\'t be empty and Enrollment must be a number...');
+		sAlert('Enrollment can\'t be empty and Enrollment must be a number...');
 		clearInBox();
 	}
 });
