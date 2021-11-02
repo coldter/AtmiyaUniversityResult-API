@@ -150,6 +150,15 @@ function tirmName(nm) {
 }
 
 //Events
+
+enrollBox.addEventListener('keyup', (e) => {
+	if(e.keyCode === 13) {
+		e.preventDefault();
+
+		submitButton.click();
+	}
+});
+
 submitButton.addEventListener('click', () => {
 	clearDisplay();
 	
