@@ -9,7 +9,7 @@ const avatar = document.querySelector('.avatar');
 const hiName = document.querySelector('#hiName')
 const imgBlock = document.querySelector('#imgBlock');
 
-const apiURL = 'https://cors.cmsapi.workers.dev/?u=';
+const apiURL = 'https://api.atmiya.ga/?u=';
 const photoURL = 'https://exam.atmiyauni.ac.in/Images/Photo/';
 
 let DETAILS;
