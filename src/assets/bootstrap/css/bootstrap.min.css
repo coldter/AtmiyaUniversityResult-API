@@ -23,6 +23,10 @@
      -moz-appearance: textfield;
  }
 
+ #imgBlock {
+	 scroll-margin-top: 85px;
+ }
+
  #loading1, #loading0 {
     display: none;
     width: 2rem;
