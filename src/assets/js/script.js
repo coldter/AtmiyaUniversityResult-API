@@ -27,6 +27,7 @@ function clearDisplay() {
 
 function displayLoading1() {
 	loader1.style.display = 'block';
+	imgBlock.scrollIntoView();
 	setTimeout(() => {
 		loader1.style.display = 'none';
 	}, 15000);
@@ -140,6 +141,7 @@ function putTable(details) {
 	});
 
 	tableResult.innerHTML = output;
+	imgBlock.scrollIntoView();
 }
 
 function tirmName(nm) {
