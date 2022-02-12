@@ -9,7 +9,7 @@ const avatar = document.querySelector('.avatar');
 const hiName = document.querySelector('#hiName')
 const imgBlock = document.querySelector('#imgBlock');
 
-const apiURL = 'https://api.atmiya.ga/?u=';
+const apiURL = 'https://api.atmiya.ml/?u=';
 const photoURL = 'https://exam.atmiyauni.ac.in/Images/Photo/';
 
 let DETAILS;
